@@ -42,36 +42,50 @@
 
    
 
-
  <!-- Ícone fixo para esconder/exibir a sidebar (fica no canto superior esquerdo) -->
  <a href="#esconder" class="icon" id="toggleIcon" onclick="toggleSidebar()">
   <img src="img/esconder.png" alt="Esconder icon">
 </a>
 
-<!-- Sidebar com ícones e links -->
+<!-- Sidebar+confetes -->
 <section id="sidebar" class="sidebar">
-  <a href="#bee" class="icon" onclick="handleBeeClick()"> 
+     <a href="#bee" class="icon" onclick="handleBeeClick()"> 
       <img src="img/bee.png" alt="Bee icon">
-  </a>
-  <a href="#perfil" class="icon" onclick="handleOtherClicks()"> 
-      <img src="img/perfil.png" alt="Perfil icon"> 
-  </a>
-  <a href="#" class="icon" onclick="handleOtherClicks()"> 
-      <img src="img/casa.png" alt="Casa icon">
-  </a>
-  <a href="#Filme" class="icon" onclick="handleOtherClicks()"> 
-      <img src="img/video.png" alt="Video icon">
-  </a>
-  <a href="#Infantil" class="icon" onclick="handleOtherClicks()"> 
-      <img src="img/infantil.png" alt="Infantil icon"> 
-  </a>
-  <a href="https://github.com/Melissa-RossaP" target="_blank" class="icon" onclick="handleOtherClicks()"> 
-      <img src="img/github.png" alt="GitHub icon">
-  </a>
-  <a href="#informacoes" class="icon" onclick="handleOtherClicks()"> 
-      <img src="img/informacoes.png" alt="Informações icon">
-  </a>
+     </a>
+
+    <a href="#" class="icon hideable" onclick="handleOtherClicks()"> 
+        <img src="img/casa.png" alt="Casa icon">
+    </a>
+    <a href="#Filme" class="icon hideable" onclick="handleOtherClicks()"> 
+        <img src="img/video.png" alt="Video icon">
+    </a>
+    <a href="#Infantil" class="icon hideable" onclick="handleOtherClicks()"> 
+        <img src="img/infantil.png" alt="Infantil icon"> 
+    </a>
+    <a href="https://github.com/Melissa-RossaP" target="_blank" class="icon hideable" onclick="handleOtherClicks()"> 
+        <img src="img/github.png" alt="GitHub icon">
+    </a>
+   <!-- Ícone de Informações -->
+<a href="#informações" class="icon" onclick="toggleInfo()"> 
+  <img src="img/informações.png" alt="Informações icon">
+</a>
 </section>
+
+
+<!-- Mini aba de informações -->
+<div id="infoBox" class="info-box">
+  <div class="info-content">
+    <h3>Informações</h3>
+    <h4>Novas Atualizações em Breve!</h4>
+    <p>O site está em constante evolução, com novas melhorias chegando em breve.</p>
+    <p>Caso encontre algum erro, ele será analisado e corrigido o mais rápido possível.</p>
+    <p>Agradeço muito por estar visitando o site!</p>
+    <p>Espero que tenha uma excelente experiência de navegação!</p>
+    <button onclick="toggleInfo()">Fechar</button>
+  </div>
+</div>
+
+
 
 
 <section id="Filme" class="Filme-container">
@@ -119,6 +133,14 @@
   </div>
 </section>
 
+
+<section id="Perfil" class="Perfil">
+  <div class="icon-fixed">
+  <a href="#perfil" class="icon" onclick="handleOtherClicks()"> 
+    <img src="img/perfil.png" alt="Perfil icon">
+  </a>
+</div>
+</section>
  <!--Não clique na abelha!-->
  <footer class="footer">
   <p>NÃO CLIQUE VÁRIAS VEZES NA ABELHA!</p>
