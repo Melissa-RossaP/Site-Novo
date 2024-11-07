@@ -1,53 +1,130 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
-    <title>Guiminamflix</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   <link rel="icon" href="img/bee.png" type="Img/x-icon">
+    <title>BeeHappy</title>
 </head>
 
 <body>
-    <header>GUIMINAMFLIX</header>
+<header>BeeHappy</header>
 
-    <section class="chamada">
-        <div class="chamada-texto">
-            <h1>ATRAVÉS DO ARANHAVERSO</h1>
-            <p>#homem-aranha</p>
-        </div>
+<h1><span class="highlight">⟳ O que você gostaria de assistir hoje? Temos várias opções! Veja só! ↴</span></h1>
 
-        <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/gt_fAE1Eg2Q?si=EEv-tsY_b1B2OwKE"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    </section>
+<section id="videos" class="video-container">
+  <div class="video">
+      <iframe src="https://www.youtube.com/embed/b9pNcrQQ2Lo?si=fShJofORQ3U8cDMe" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+      <h3><span class="highlight2">O Paradoxo do Navio de Teseu EXPLICADO</span></h3>
+      <p><span class="highlight2">Você ainda é o mesmo de anos atrás? Para você: o navio continua o mesmo?</span></p>
+  </div>
 
-    <section class="categoria">
-        <h2>Filmes e séries</h2>
-        <div class="categoria-videos">
-            <a href="https://www.youtube.com/watch?v=cs15QqG6Gjc">
-                <img src="https://img.youtube.com/vi/cs15QqG6Gjc/maxresdefault.jpg" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=nCmIwcycUJ8">
-                <img src="https://img.youtube.com/vi/nCmIwcycUJ8/maxresdefault.jpg" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=FvRmEapoHRc">
-                <img src="https://img.youtube.com/vi/FvRmEapoHRc/maxresdefault.jpg" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=Ipkw_hWW-Hw">
-                <img src="https://img.youtube.com/vi/Ipkw_hWW-Hw/maxresdefault.jpg" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=d4DzMNGoyis">
-                <img src="https://img.youtube.com/vi/d4DzMNGoyis/maxresdefault.jpg" />
-            </a>
-        </div>
-    </section>
+  <div class="video">
+      <iframe src="https://www.youtube.com/embed/Fh5DjpXeeBA?si=W7rWRmz3_9Iepa-D" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+      <h3><span class="highlight2">OPINIÕES ESQUISITA (Ft. Scottonauta e Tiba)</span></h3>
+      <p><span class="highlight2">CantinhoDoUmild</span></p>
+  </div>
+</section>
+<section id="videos" class="video-container">
+  <div class="video-item">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/rOkCtMb5T6E?si=eyXgi_sdxk9ur_rM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <h3><span class="highlight2">ANALISANDO AS PIORES FANTASIAS DO BAILE DA SEPHORA </span></h3>
+      <p><span class="highlight2">Looks/fantasias do baile de halloween da Sephora 2024.</span></p>
+  </div>
 
+  <div class="video-item">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Cv1Pp2khr8o?si=vV3_bWkqMGEghOio" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <h3><span class="highlight2">VOO 375, o SEQUESTRO que PAROU o BRASIL</span></h3>
+      <p><span class="highlight2">Este é um dos casos mais intrigantes e impressionantes da história do Brasil.</span></p>
+  </div>
+</section>
+
+   
+
+<!--Sidebar+confetes-->
+<section id="sidebar">
+  <div class="sidebar">
+    
+    <a href="#esconder" class="icon" id="toggleIcon" onclick="toggleSidebar()">
+      <img src="img/esconder.png" alt="Esconder icon">
+  </a>
+
+     <a href="#bee" class="icon" onclick="handleBeeClick()"> 
+     <img src="img/bee.png" alt="Bee icon">
+     </a>
+    <a href="#perfil" class="icon hideable" onclick="handleOtherClicks()"> 
+        <img src="img/perfil.png" alt="Perfil icon"> 
+    </a>
+    <a href="#" class="icon hideable" onclick="handleOtherClicks()"> 
+        <img src="img/casa.png" alt="Casa icon">
+    </a>
+    <a href="#Filme" class="icon hideable" onclick="handleOtherClicks()"> 
+        <img src="img/video.png" alt="Video icon">
+    </a>
+    <a href="#Infantil" class="icon hideable" onclick="handleOtherClicks()"> 
+        <img src="img/infantil.png" alt="Infantil icon"> 
+    </a>
+    <a href="https://github.com/Melissa-RossaP" target="_blank" class="icon hideable" onclick="handleOtherClicks()"> 
+        <img src="img/github.png" alt="GitHub icon">
+    </a>
+    <a href="#informações" class="icon hideable" onclick="handleOtherClicks()"> 
+       <img src="img/informações.png" alt="Informações icon">
+    </a>
+</section>
+
+
+<section id="Filme" class="Filme-container">
+  <h1><span class="highlight3">Seção de Filmes</span></h1>
+  <div class="Filme-items">
+      <div class="Filme-item">
+        <iframe src="https://www.youtube.com/embed/FPzotY-eCKY?si=F2_FgD8Rpbiae-Sd&amp;start=49" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3><span class="highlight3">Caçada Implacável - Filme Completo Dublado</span></h3>
+      </div>
+      <div class="Filme-item">
+        <iframe src="https://www.youtube.com/embed/FjwMO-CP9rU?si=ODDHxWyvu6jjP4sC&amp;start=60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3><span class="highlight3">Caminho Para a Liberdade (2022) - Filme Completo Dublado</span></h3>
+      </div>
+      <div class="Filme-item">
+        <iframe src="https://www.youtube.com/embed/Qx8itZO6Vb8?si=l9i1u6yGjg36s2br&amp;start=46" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3><span class="highlight3">Sem Retorno (2020) - Filme Completo Dublado</span></h3>
+      </div>
+      <div class="Filme-item">
+        <iframe src="https://www.youtube.com/embed/knovvPSPMSE?si=QpYbPbIURnC_SLXI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3><span class="highlight3">Pânico 4 (2011) - Filme Completo Dublado</span></h3>
+      </div>
+  </div>
+</section>
+
+<section id="Infantil" class="Infantil-container">
+  <h1><span class="highlight4">Seção Infantil</span></h1>
+  <div class="Infantil-items">
+      <div class="Infantil-item">
+        <iframe src="https://www.youtube.com/embed/videoseries?si=bkQQBMdCfBVPl_li&amp;list=PL3xmbRfwl4FF-f5-02tPObfGdp47J5lRP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h3><span class="highlight4">Looney Tunes em Português 🇧🇷</span></h3>
+      </div>
+      <div class="Infantil-item">
+        <iframe src="https://www.youtube.com/embed/Pvyejt7Ufyo?si=UvMHiFccUazIsN0B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h3><span class="highlight4">Masha e o Urso</span></h3>
+      </div>
+      <div class="Infantil-item">
+        <iframe src="https://www.youtube.com/embed/AUebXlvQ8Bg?si=KpaCYqZ3bkHsXYzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3><span class="highlight4">Turma da Mônica</span></h3>
+      </div>
+      <div class="Infantil-item">
+        <iframe src="https://www.youtube.com/embed/k1b9ND7-jjI?si=gi-99s_JxIH2epG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3><span class="highlight4">Pica-Pau em Português</span></h3>
+      </div>
+      </div>
+  </div>
+</section>
+
+ <!--Não clique na abelha!-->
+ <footer class="footer">
+  <p>NÃO CLIQUE VÁRIAS VEZES NA ABELHA!</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
 </body>
 </html>
