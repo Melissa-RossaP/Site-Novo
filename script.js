@@ -46,3 +46,10 @@ function handleOtherClicks() {
     createConfetti(); // Chama confete para outros ícones
 }
 
+// Função para esconder e mostrar a sidebar
+function toggleSidebar() {
+    var sidebar = document.getElementById("sidebar");
+    
+    // Alterna a classe 'hidden' para esconder/mostrar a sidebar
+    sidebar.classList.toggle("hidden");
+}

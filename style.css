@@ -79,20 +79,20 @@ h3, p {
   margin: 0;
 }
 
+/* Estilos da sidebar */
 .sidebar {
-  background-color: #D9B071;            
-  width: 80px;                          
-  height: 100vh;                        
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 20px;
-  position: fixed;                      
+  width: 250px;
+  height: 100vh;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  position: fixed;
   top: 0;
   left: 0;
-  box-shadow: 2px 0 5px #7a5f36; 
-  z-index: 1000;                        
+  transition: transform 0.3s ease;
+  z-index: 1; /* Define a camada da sidebar */
 }
+
 
 .icon {
   margin: 15px 0;                       
@@ -230,4 +230,18 @@ body {
   margin: 0; /* Remove margens padrão do parágrafo */
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-style: italic;
+}
+
+/* Esconde a sidebar deslocando-a para fora da tela */
+.sidebar.hidden {
+  transform: translateX(-100%);
+}
+
+/* Ícone de "esconder" fixo no canto superior esquerdo da tela */
+#toggleIcon {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10; /* Ícone acima da sidebar */
+  cursor: pointer;
 }
