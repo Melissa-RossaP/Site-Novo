@@ -263,37 +263,30 @@ body {
   cursor: pointer;
 }
 
-/* Estilos para o ícone de perfil */
-.Perfil {
-  position: sticky;
-  position: fixed;            /* Fixa a posição no canto da tela */
-  top: 20px;                  /* Distância de 20px do topo da tela */
-  right: 20px;                /* Distância de 20px da borda direita da tela */
-  z-index: 9999;              /* Garante que o ícone fique acima de outros elementos */
-  background-attachment: fixed;
+.perfil-fixo {
+  position: fixed;           /* Mantém o ícone fixo na tela */
+  top: 20px;                 /* Distância de 20px do topo */
+  right: 20px;               /* Distância de 20px da borda direita */
+  z-index: 9999;             /* Coloca o ícone acima dos outros elementos */
 }
 
-/* Contêiner que cria o círculo ao redor da imagem */
-.Perfil .icon {
+.icone-fixo {
   cursor: pointer;
-  display: inline-block;
-  width: 50px;                /* Define a largura do círculo */
-  height: 50px;               /* Define a altura do círculo igual à largura */
-  background-color: #D9B071;  /* Cor de fundo do círculo */
-  border-radius: 50%;         /* Faz o contorno arredondado (círculo perfeito) */
-  border: 4px solid #d6ad6f;  /* Borda do círculo */
-  box-shadow: 0 0 5px #7a5f36;/* Sombra para destacar o círculo */
-  display: flex;              /* Usamos flexbox para centralizar a imagem */
-  justify-content: center;    /* Centraliza a imagem horizontalmente */
-  align-items: center;        /* Centraliza a imagem verticalmente */
+  width: 50px;               /* Largura do círculo */
+  height: 50px;              /* Altura do círculo */
+  background-color: #D9B071; /* Cor de fundo do círculo */
+  border-radius: 50%;        /* Faz o contorno arredondado (círculo) */
+  border: 4px solid #d6ad6f; /* Borda do círculo */
+  box-shadow: 0 0 5px #7a5f36;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Ajusta a imagem dentro do círculo */
-.Perfil .icon img {
-  width: 30px;               /* Ajusta o tamanho da imagem dentro do círculo */
-  height: 30px;              /* Ajusta o tamanho da imagem dentro do círculo */
-  border-radius: 50%;        /* Torna a imagem redonda */
-  filter: grayscale(0);      /* Desativa o filtro de escala de cinza (opcional) */
+.icone-fixo img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 
 
