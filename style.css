@@ -80,7 +80,8 @@ h3, p {
 }
 
 /* Estilos da sidebar */
-background-color: #D9B071;            
+.sidebar {
+  background-color: #D9B071;            
   width: 80px;                          
   height: 100vh;                        
   display: flex;
